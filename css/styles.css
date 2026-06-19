@@ -31,7 +31,11 @@
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
-html { scroll-behavior: smooth; scroll-padding-top: 88px; }
+html {
+  scroll-behavior: smooth; scroll-padding-top: 88px;
+  overflow-x: hidden;
+  overflow-x: clip; /* przycina poziomo bez tworzenia kontenera scrolla (nadpisuje hidden tam, gdzie wspierane) */
+}
 
 body {
   font-family: "Inter", system-ui, sans-serif;
@@ -40,6 +44,7 @@ body {
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
+  overflow-x: clip;
 }
 
 img, svg { display: block; max-width: 100%; }
