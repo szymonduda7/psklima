@@ -72,6 +72,32 @@
     nums.forEach((n) => io.observe(n));
   }
 
+  /* ---------- Opinie carousel ---------- */
+  const track = document.getElementById("opinieTrack");
+  if (track) {
+    const prev = document.getElementById("opiniePrev");
+    const next = document.getElementById("opinieNext");
+    const slides = Array.from(track.querySelectorAll(".quote"));
+
+    const step = () => {
+      const gap = parseFloat(getComputedStyle(track).columnGap) || 24;
+      return slides[0].offsetWidth + gap;
+    };
+    const maxScroll = () => track.scrollWidth - track.clientWidth - 1;
+
+    const update = () => {
+      const x = track.scrollLeft;
+      prev.disabled = x <= 2;
+      next.disabled = x >= maxScroll();
+    };
+
+    prev.addEventListener("click", () => track.scrollBy({ left: -step(), behavior: "smooth" }));
+    next.addEventListener("click", () => track.scrollBy({ left: step(), behavior: "smooth" }));
+    track.addEventListener("scroll", update, { passive: true });
+    window.addEventListener("resize", update);
+    update();
+  }
+
   /* ---------- Contact form (front-end demo) ---------- */
   const form = document.getElementById("contactForm");
   const note = document.getElementById("formNote");
