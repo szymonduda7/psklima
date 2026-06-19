@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PS Klima — Klimatyzacja, Pompy Ciepła i Wentylacja</title>
+  <meta name="description" content="PS Klima — profesjonalny montaż klimatyzacji, pomp ciepła i wentylacji z rekuperacją. Doradztwo, montaż i serwis. Bezpłatna wycena. Komfortowy klimat przez cały rok." />
+  <meta name="theme-color" content="#EA580C" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="PS Klima — Komfortowy klimat przez cały rok" />
+  <meta property="og:description" content="Montaż klimatyzacji, pomp ciepła i wentylacji. Doradztwo, montaż i serwis w jednej firmie." />
+  <meta property="og:type" content="website" />
+
+  <link rel="icon" type="image/svg+xml" href="assets/logo.svg" />
+
+  <!-- Fonts (Inter) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <!-- AOS — Animate On Scroll -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="top">
+    <div class="container nav__inner">
+      <a href="#top" class="brand" aria-label="PS Klima — strona główna">
+        <span class="brand__mark">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M17.7 7.7a2.5 2.5 0 1 1 1.8 4.3H2"></path>
+            <path d="M9.6 4.6A2 2 0 1 1 11 8H2"></path>
+            <path d="M12.6 19.4A2 2 0 1 0 14 16H2"></path>
+          </svg>
+        </span>
+        <span class="brand__text">PS<span>Klima</span></span>
+      </a>
+
+      <nav class="nav__links" id="navLinks" aria-label="Menu główne">
+        <a href="#uslugi">Usługi</a>
+        <a href="#dlaczego">Dlaczego my</a>
+        <a href="#proces">Jak działamy</a>
+        <a href="#opinie">Opinie</a>
+        <a href="#kontakt">Kontakt</a>
+        <a href="#kontakt" class="btn btn--primary nav__cta">Bezpłatna wycena</a>
+      </nav>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Otwórz menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="hero__bg" aria-hidden="true">
+      <span class="airflow airflow--1"></span>
+      <span class="airflow airflow--2"></span>
+      <span class="airflow airflow--3"></span>
+      <div class="hero__glow"></div>
+    </div>
+
+    <div class="container hero__inner">
+      <p class="hero__eyebrow" data-aos="fade-up">Klimatyzacja · Pompy ciepła · Wentylacja</p>
+      <h1 class="hero__title" data-aos="fade-up" data-aos-delay="80">
+        Komfortowy klimat<br />przez <span class="grad">cały rok</span>.
+      </h1>
+      <p class="hero__lead" data-aos="fade-up" data-aos-delay="160">
+        Projektujemy, montujemy i serwisujemy systemy klimatyzacji oraz pomp ciepła.
+        Chłód latem, ciepło zimą i czyste powietrze każdego dnia — w domu i w firmie.
+      </p>
+      <div class="hero__actions" data-aos="fade-up" data-aos-delay="240">
+        <a href="#kontakt" class="btn btn--primary btn--lg">Zamów bezpłatną wycenę</a>
+        <a href="#uslugi" class="btn btn--ghost btn--lg">Zobacz usługi</a>
+      </div>
+
+      <ul class="hero__badges" data-aos="fade-up" data-aos-delay="320">
+        <li><strong>Gwarancja</strong> do 5 lat</li>
+        <li><strong>Certyfikowani</strong> instalatorzy F-gazy</li>
+        <li><strong>Dofinansowania</strong> — pomagamy w formalnościach</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ STATS ============ -->
+  <section class="stats">
+    <div class="container stats__grid">
+      <div class="stat" data-aos="fade-up">
+        <div class="stat__num" data-count="12">12</div>
+        <div class="stat__label">lat na rynku</div>
+      </div>
+      <div class="stat" data-aos="fade-up" data-aos-delay="80">
+        <div class="stat__num" data-count="1500" data-suffix="+">1500+</div>
+        <div class="stat__label">zrealizowanych montaży</div>
+      </div>
+      <div class="stat" data-aos="fade-up" data-aos-delay="160">
+        <div class="stat__num" data-count="98" data-suffix="%">98%</div>
+        <div class="stat__label">zadowolonych klientów</div>
+      </div>
+      <div class="stat" data-aos="fade-up" data-aos-delay="240">
+        <div class="stat__num" data-count="48" data-suffix="h">48h</div>
+        <div class="stat__label">średni czas reakcji serwisu</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ USŁUGI ============ -->
+  <section class="section" id="uslugi">
+    <div class="container">
+      <div class="section__head" data-aos="fade-up">
+        <span class="kicker">Nasze usługi</span>
+        <h2 class="section__title">Wszystko, co potrzebne do idealnego klimatu</h2>
+        <p class="section__sub">Kompleksowo — od doradztwa i doboru urządzeń, przez profesjonalny montaż, po serwis przez cały okres użytkowania.</p>
+      </div>
+
+      <div class="cards">
+        <article class="card" data-aos="fade-up">
+          <span class="card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="9" rx="2"/><path d="M6 17v1a2 2 0 0 0 2 2h0"/><path d="M12 13v4"/><path d="M18 13v2a2 2 0 0 1-2 2h-2"/></svg>
+          </span>
+          <h3>Klimatyzacja</h3>
+          <p>Montaż klimatyzatorów split i multisplit renomowanych marek. Cicha praca, niskie zużycie energii i funkcja grzania.</p>
+        </article>
+
+        <article class="card" data-aos="fade-up" data-aos-delay="80">
+          <span class="card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20"/><path d="m4.9 4.9 14.2 14.2"/><path d="M2 12h20"/><path d="m4.9 19.1 14.2-14.2"/><circle cx="12" cy="12" r="3"/></svg>
+          </span>
+          <h3>Pompy ciepła</h3>
+          <p>Ekologiczne i ekonomiczne ogrzewanie domu oraz ciepła woda użytkowa. Dobór mocy i pełna obsługa dotacji.</p>
+        </article>
+
+        <article class="card" data-aos="fade-up" data-aos-delay="160">
+          <span class="card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.7 7.7a2.5 2.5 0 1 1 1.8 4.3H2"/><path d="M9.6 4.6A2 2 0 1 1 11 8H2"/><path d="M12.6 19.4A2 2 0 1 0 14 16H2"/></svg>
+          </span>
+          <h3>Wentylacja i rekuperacja</h3>
+          <p>Mechaniczna wentylacja z odzyskiem ciepła. Świeże, filtrowane powietrze i nawet do 90% oszczędności na ogrzewaniu.</p>
+        </article>
+
+        <article class="card" data-aos="fade-up">
+          <span class="card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+          </span>
+          <h3>Serwis i konserwacja</h3>
+          <p>Przeglądy okresowe, czyszczenie, odgrzybianie i napełnianie czynnikiem. Dłuższa żywotność i zdrowsze powietrze.</p>
+        </article>
+
+        <article class="card" data-aos="fade-up" data-aos-delay="80">
+          <span class="card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V7l8-4v18"/><path d="M19 21V11l-6-4"/><path d="M9 9v.01"/><path d="M9 12v.01"/><path d="M9 15v.01"/></svg>
+          </span>
+          <h3>Obiekty komercyjne</h3>
+          <p>Klimatyzacja i wentylacja dla biur, lokali, hoteli i hal. Systemy VRF, kurtyny powietrzne i agregaty wody lodowej.</p>
+        </article>
+
+        <article class="card" data-aos="fade-up" data-aos-delay="160">
+          <span class="card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+          </span>
+          <h3>Doradztwo i dobór</h3>
+          <p>Pomożemy wybrać optymalne urządzenie do Twojej przestrzeni i budżetu. Wycena i wizja lokalna bez zobowiązań.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ DLACZEGO MY ============ -->
+  <section class="section section--dark" id="dlaczego">
+    <div class="container why">
+      <div class="why__intro" data-aos="fade-right">
+        <span class="kicker kicker--light">Dlaczego PS Klima</span>
+        <h2 class="section__title">Robimy to dobrze za pierwszym razem</h2>
+        <p class="section__sub section__sub--light">
+          Łączymy techniczną wiedzę z czystym, estetycznym montażem. Nie znikamy po fakturze —
+          zostajemy z Tobą na lata jako Twój serwis.
+        </p>
+        <a href="#kontakt" class="btn btn--primary">Porozmawiajmy o Twoim projekcie</a>
+      </div>
+
+      <ul class="why__list">
+        <li data-aos="fade-left">
+          <span class="why__check">✓</span>
+          <div><h4>Doświadczeni, certyfikowani fachowcy</h4><p>Uprawnienia F-gazowe i SEP. Montaż zgodny ze sztuką i wymogami gwarancji producenta.</p></div>
+        </li>
+        <li data-aos="fade-left" data-aos-delay="80">
+          <span class="why__check">✓</span>
+          <div><h4>Stała, jasna cena</h4><p>Wycena przed pracą — bez ukrytych kosztów i niespodzianek na koniec.</p></div>
+        </li>
+        <li data-aos="fade-left" data-aos-delay="160">
+          <span class="why__check">✓</span>
+          <div><h4>Czysty i estetyczny montaż</h4><p>Dbamy o detale i porządek. Po nas zostaje tylko sprawne urządzenie.</p></div>
+        </li>
+        <li data-aos="fade-left" data-aos-delay="240">
+          <span class="why__check">✓</span>
+          <div><h4>Pomoc w dotacjach</h4><p>Prowadzimy przez program „Czyste Powietrze" i „Mój Prąd" — krok po kroku.</p></div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ PROCES ============ -->
+  <section class="section" id="proces">
+    <div class="container">
+      <div class="section__head" data-aos="fade-up">
+        <span class="kicker">Jak działamy</span>
+        <h2 class="section__title">Prosto, od pierwszego telefonu do uruchomienia</h2>
+      </div>
+
+      <div class="steps">
+        <div class="step" data-aos="fade-up">
+          <div class="step__no">01</div>
+          <h3>Kontakt i wycena</h3>
+          <p>Dzwonisz lub wypełniasz formularz. Ustalamy potrzeby i przygotowujemy bezpłatną, niezobowiązującą wycenę.</p>
+        </div>
+        <div class="step" data-aos="fade-up" data-aos-delay="80">
+          <div class="step__no">02</div>
+          <h3>Wizja lokalna i dobór</h3>
+          <p>Sprawdzamy warunki na miejscu i dobieramy urządzenie idealne do Twojej przestrzeni i budżetu.</p>
+        </div>
+        <div class="step" data-aos="fade-up" data-aos-delay="160">
+          <div class="step__no">03</div>
+          <h3>Profesjonalny montaż</h3>
+          <p>Sprawnie i czysto montujemy system w ustalonym terminie. Uruchamiamy i sprawdzamy szczelność.</p>
+        </div>
+        <div class="step" data-aos="fade-up" data-aos-delay="240">
+          <div class="step__no">04</div>
+          <h3>Serwis i opieka</h3>
+          <p>Szkolimy z obsługi i przypominamy o przeglądach. Jesteśmy pod telefonem, gdy nas potrzebujesz.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ OPINIE ============ -->
+  <section class="section section--soft" id="opinie">
+    <div class="container">
+      <div class="section__head" data-aos="fade-up">
+        <span class="kicker">Opinie klientów</span>
+        <h2 class="section__title">Zaufały nam setki domów i firm</h2>
+      </div>
+
+      <div class="cards">
+        <figure class="quote" data-aos="fade-up">
+          <div class="quote__stars">★★★★★</div>
+          <blockquote>Klimatyzacja zamontowana wzorowo i bardzo schludnie. Ekipa punktualna, wszystko dokładnie wyjaśnione. Polecam w 100%.</blockquote>
+          <figcaption><strong>Anna K.</strong><span>dom jednorodzinny</span></figcaption>
+        </figure>
+        <figure class="quote" data-aos="fade-up" data-aos-delay="80">
+          <div class="quote__stars">★★★★★</div>
+          <blockquote>Pompa ciepła w nowym domu — pełen profesjonalizm i realna pomoc przy dofinansowaniu. Rachunki za ogrzewanie spadły o połowę.</blockquote>
+          <figcaption><strong>Marek W.</strong><span>inwestor prywatny</span></figcaption>
+        </figure>
+        <figure class="quote" data-aos="fade-up" data-aos-delay="160">
+          <div class="quote__stars">★★★★★</div>
+          <blockquote>Obsługujemy z PS Klima trzy lokale. Szybki serwis, konkretne doradztwo i uczciwe ceny. Współpraca bez zarzutu.</blockquote>
+          <figcaption><strong>Restauracja „Stara Kuźnia"</strong><span>klient biznesowy</span></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA ============ -->
+  <section class="cta">
+    <div class="container cta__inner" data-aos="zoom-in">
+      <h2>Gotowy na komfortowy klimat?</h2>
+      <p>Zostaw kontakt — oddzwonimy i przygotujemy bezpłatną wycenę dopasowaną do Twoich potrzeb.</p>
+      <a href="#kontakt" class="btn btn--light btn--lg">Zamów wycenę</a>
+    </div>
+  </section>
+
+  <!-- ============ KONTAKT ============ -->
+  <section class="section" id="kontakt">
+    <div class="container contact">
+      <div class="contact__info" data-aos="fade-right">
+        <span class="kicker">Kontakt</span>
+        <h2 class="section__title">Porozmawiajmy o Twoim klimacie</h2>
+        <p class="section__sub">Odpowiadamy szybko — zwykle tego samego dnia roboczego.</p>
+
+        <ul class="contact__list">
+          <li>
+            <span class="contact__ic">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </span>
+            <div><span>Telefon</span><a href="tel:+48000000000">+48 000 000 000</a></div>
+          </li>
+          <li>
+            <span class="contact__ic">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            </span>
+            <div><span>E-mail</span><a href="mailto:kontakt@psklima.pl">kontakt@psklima.pl</a></div>
+          </li>
+          <li>
+            <span class="contact__ic">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </span>
+            <div><span>Obszar działania</span><a href="#kontakt">Twoje miasto i okolice</a></div>
+          </li>
+          <li>
+            <span class="contact__ic">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            </span>
+            <div><span>Godziny pracy</span><a href="#kontakt">Pn–Pt 8:00–18:00, Sob 9:00–14:00</a></div>
+          </li>
+        </ul>
+      </div>
+
+      <form class="contact__form" data-aos="fade-left" id="contactForm" novalidate>
+        <div class="field">
+          <label for="name">Imię i nazwisko</label>
+          <input type="text" id="name" name="name" placeholder="Jan Kowalski" required />
+        </div>
+        <div class="field-row">
+          <div class="field">
+            <label for="phone">Telefon</label>
+            <input type="tel" id="phone" name="phone" placeholder="+48 600 000 000" required />
+          </div>
+          <div class="field">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="jan@email.pl" />
+          </div>
+        </div>
+        <div class="field">
+          <label for="topic">Czego dotyczy zapytanie?</label>
+          <select id="topic" name="topic">
+            <option value="Klimatyzacja">Klimatyzacja</option>
+            <option value="Pompa ciepła">Pompa ciepła</option>
+            <option value="Wentylacja / rekuperacja">Wentylacja / rekuperacja</option>
+            <option value="Serwis">Serwis / przegląd</option>
+            <option value="Obiekt komercyjny">Obiekt komercyjny</option>
+            <option value="Inne">Inne</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="message">Wiadomość</label>
+          <textarea id="message" name="message" rows="4" placeholder="Napisz kilka słów o swoim projekcie..."></textarea>
+        </div>
+        <label class="consent">
+          <input type="checkbox" required />
+          <span>Wyrażam zgodę na kontakt w sprawie mojego zapytania.</span>
+        </label>
+        <button type="submit" class="btn btn--primary btn--lg btn--block">Wyślij zapytanie</button>
+        <p class="form__note" id="formNote" hidden>Dziękujemy! Odezwiemy się najszybciej, jak to możliwe.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="#top" class="brand brand--footer">
+          <span class="brand__mark">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17.7 7.7a2.5 2.5 0 1 1 1.8 4.3H2"/><path d="M9.6 4.6A2 2 0 1 1 11 8H2"/><path d="M12.6 19.4A2 2 0 1 0 14 16H2"/></svg>
+          </span>
+          <span class="brand__text">PS<span>Klima</span></span>
+        </a>
+        <p>Komfortowy klimat przez cały rok — klimatyzacja, pompy ciepła i wentylacja z jednej ręki.</p>
+      </div>
+      <nav class="footer__nav" aria-label="Stopka">
+        <a href="#uslugi">Usługi</a>
+        <a href="#dlaczego">Dlaczego my</a>
+        <a href="#proces">Jak działamy</a>
+        <a href="#kontakt">Kontakt</a>
+      </nav>
+    </div>
+    <div class="container footer__bottom">
+      <span>© <span id="year">2026</span> PS Klima. Wszelkie prawa zastrzeżone.</span>
+      <span>Realizacja: SDC Automations</span>
+    </div>
+  </footer>
+
+  <a href="#kontakt" class="fab" aria-label="Zamów wycenę">Wyceń</a>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
