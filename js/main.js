@@ -17,11 +17,8 @@
 
   /* ---------- Sticky nav shadow ---------- */
   const nav = document.querySelector(".nav");
-  const fab = document.querySelector(".fab");
   const onScroll = () => {
-    const y = window.scrollY;
-    nav.classList.toggle("is-scrolled", y > 8);
-    fab.classList.toggle("is-visible", y > 600);
+    nav.classList.toggle("is-scrolled", window.scrollY > 8);
   };
   onScroll();
   window.addEventListener("scroll", onScroll, { passive: true });
