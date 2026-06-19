@@ -88,12 +88,11 @@ a { color: inherit; text-decoration: none; }
    ============================================================ */
 .nav {
   position: fixed; inset: 0 0 auto 0; z-index: 100;
-  background: rgba(255, 255, 255, .72);
-  backdrop-filter: saturate(160%) blur(14px);
-  border-bottom: 1px solid transparent;
-  transition: border-color .3s, box-shadow .3s, background .3s;
+  background: #fff;
+  border-bottom: 1px solid var(--line);
+  transition: box-shadow .3s;
 }
-.nav.is-scrolled { border-color: var(--line); box-shadow: 0 6px 24px rgba(12, 10, 9, .06); }
+.nav.is-scrolled { box-shadow: 0 6px 24px rgba(12, 10, 9, .06); }
 .nav__inner { display: flex; align-items: center; justify-content: space-between; height: 72px; }
 
 .brand { display: inline-flex; align-items: center; gap: .6rem; font-weight: 900; }

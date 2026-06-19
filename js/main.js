@@ -41,6 +41,15 @@
   });
   links.querySelectorAll("a").forEach((a) => a.addEventListener("click", closeMenu));
 
+  /* ---------- Logo → scroll to top ---------- */
+  document.querySelectorAll(".brand").forEach((brand) => {
+    brand.addEventListener("click", (e) => {
+      e.preventDefault();
+      closeMenu();
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  });
+
   /* ---------- Animated stat counters ---------- */
   const nums = document.querySelectorAll(".stat__num");
   const animateCount = (el) => {
